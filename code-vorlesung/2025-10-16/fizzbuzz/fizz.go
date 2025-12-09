@@ -8,13 +8,13 @@ import "fmt"
 // Bei Zahlen, die sowohl durch 3 als auch durch 5 teilbar sind,
 // wird "fizzbuzz" ausgegeben.
 func Fizz() {
-	for i := 1; i <= 30; i++ {
+	for i := 1; i < 31; i++ {
 		if i%5 == 0 && i%3 == 0 {
 			fmt.Println("fizzbuzz")
-		} else if i%3 == 0 {
-			fmt.Println("fizz")
 		} else if i%5 == 0 {
 			fmt.Println("buzz")
+		} else if i%3 == 0 {
+			fmt.Println("fizz")
 		} else {
 			fmt.Println(i)
 		}

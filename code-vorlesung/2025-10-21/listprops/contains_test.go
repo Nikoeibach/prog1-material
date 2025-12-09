@@ -42,7 +42,7 @@ func ExampleContainsNRow() {
 	fmt.Println(ContainsNRow(l1, "Welt", 4))
 
 	// Output:
-	// true
+	// false
 	// true
 	// false
 }

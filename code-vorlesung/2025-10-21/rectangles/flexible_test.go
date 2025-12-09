@@ -15,3 +15,18 @@ func ExampleDrawRectangle() {
 	// BAAAB
 	// BBBBB
 }
+
+func ExampleDrawTriangle() {
+	// Wir zeichnen ein Dreieck der Größe 6.
+	// Rand: "#"
+	// Füllung: "+"
+	DrawTriangle(6, "+", "#")
+
+	// Output:
+	// #
+	// ##
+	// #+#
+	// #++#
+	// #+++#
+	// ######
+}

@@ -5,10 +5,14 @@ import "fmt"
 // Sucht x in l und liefert die Position des
 // ersten Vorkommens von x, falls dies existiert.
 // Falls x nicht in l vorkommt, wird -1 geliefert.
+
 func Find(l []int, x int) int {
-	for i := 0; i < len(l); i++ {
-		if l[i] == x {
-			return i
+	if len(l) == 0 {
+		return -1
+	}
+	for pos, el := range l {
+		if el == x {
+			return pos
 		}
 	}
 	return -1
@@ -18,10 +22,10 @@ func Find(l []int, x int) int {
 // mit allen Vorkommen von x in l.
 func FindAll(l []int, x int) []int {
 	result := []int{}
+	for pos, el := range l {
+		if el == x {
+			result = append(result, pos)
 
-	for i := 0; i < len(l); i++ {
-		if l[i] == x {
-			result = append(result, i)
 		}
 	}
 	return result

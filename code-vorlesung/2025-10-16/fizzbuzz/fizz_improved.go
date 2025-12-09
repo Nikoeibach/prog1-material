@@ -9,14 +9,15 @@ import "fmt"
 // wird "fizzbuzz" ausgegeben.
 func FizzImproved(x, y, n int) {
 	for i := 1; i <= n; i++ {
-		if i%y == 0 && i%x == 0 {
-			fmt.Println("fizzbuzz")
+		if i%x == 0 && i%y == 0 {
+			fmt.Print("fizzbuzz")
 		} else if i%x == 0 {
-			fmt.Println("fizz")
+			fmt.Print("fizz")
 		} else if i%y == 0 {
-			fmt.Println("buzz")
+			fmt.Print("buzz")
 		} else {
-			fmt.Println(i)
+			fmt.Print(i)
 		}
+		fmt.Println()
 	}
 }
